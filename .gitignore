@@ -4,3 +4,4 @@ __pycache__
 resources
 *.kate-swp
 benchmark.*.txt
+/backgrounds
