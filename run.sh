@@ -11,4 +11,9 @@ fi
 
 source .venv/bin/activate
 
-lfbw -W 640 -H 480 -F 30 -w /dev/video0 --no-background
+lfbw --width 640 --height 480 --fps 30 -w /dev/video0 \
+    --threshold 80 \
+    --no-postprocess \
+    --no-foreground \
+    --select-model 0 \
+    --background-image ./backgrounds/bg1.jpg 
